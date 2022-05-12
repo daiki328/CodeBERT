@@ -594,6 +594,7 @@ def main():
     tokenizer = RobertaTokenizer.from_pretrained(args.tokenizer_name)
     model = RobertaForSequenceClassification.from_pretrained(args.model_name_or_path,config=config)    
 
+    # TODO
     model=Model(model,config,tokenizer,args)
     logger.info("Training/evaluation parameters %s", args)
     # Training
